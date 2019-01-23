@@ -3,15 +3,10 @@ const PORTFOLIO_DATA = {
   shortDescription:
     "I'm a full-stack software engineer, focused on creating API-driven apps with cutting-edge front-ends.",
   aboutMeDescription:
-    'I am a full stack software engineer with a Masters degree in Computer Science and more than 5 years of professional experience in software development. I have served as both backend and frontend developer in large-scale projects. I have extensively used Angular for client side and Java frameworks for server side development, whereas I am always keeping myself up-to-date with new technologies and trends',
+    'I am a full stack software engineer with a Masters degree in Computer Science and more than 5 years of professional experience in software development. I have served as both backend and frontend developer in large-scale, commercial projects. I have extensively used Angular for client side and Java frameworks for server side development, whereas I am always keeping myself up-to-date with new technologies and trends',
   name: 'Dimitrios Douras',
   tel: '(+30)6936607373',
   email: 'dimitrios.n.douras@gmail.com',
-  role: 'Frontend Developer',
-  linkedinId: 'Your LinkedIn Id',
-  skypeid: 'Your skypeid',
-  roleDescription:
-    'I like dabbling in various parts of frontend development and like to learn about new technologies, write technical articles or simply play games in my free time. ',
   socialLinks: [
     {
       name: 'linkedin',
@@ -29,25 +24,24 @@ const PORTFOLIO_DATA = {
       className: 'fa fa-skype'
     }
   ],
-  aboutme:
-    'I have finished my B.E. in Computer Science and have been working in industry for past few years.',
-  address: 'India',
-  website: 'https://www.codeclassifiers.com',
   education: [
     {
-      UniversityName: 'Mumbai University',
-      specialization: 'Some specialization',
-      MonthOfPassing: 'Jan',
-      YearOfPassing: '2018',
-      Achievements: 'Some Achievements'
+      university: 'The University of Edinburgh',
+      link: 'https://www.ed.ac.uk/home',
+      degree: 'MSc in Computer Science',
+      year: '2010-2011',
+      description: 'Developed excellent knowledge of key concepts of computer systems and software engineering by completing projects in the form of\n' +
+        'programming assignments and up-to-date case studies and attending lab courses and tutorials for each module.'
     },
     {
-      UniversityName: 'Some University',
-      specialization: 'Some specialization',
-      MonthOfPassing: 'Jan',
-      YearOfPassing: '2018',
-      Achievements: 'Some Achievements'
-    }
+      university: 'University of Thessaly',
+      link: 'http://www.uth.gr/en/',
+      degree: 'MEng in Computer & Communications',
+      year: '2001-2007',
+      description: 'Established a comprehensive educational framework on every aspect of Computer and Communications Engineering including (a)\n' +
+        'Fundamentals and Applications of Computer Science, (b) Software Engineering and Information Systems, (c) Hardware and Computer\n' +
+        'Architecture and (d) Signals, Telecommunication and Networks.'
+    },
   ],
   work: [
     {
@@ -65,7 +59,6 @@ const PORTFOLIO_DATA = {
       Achievements: 'Some Achievements'
     }
   ],
-  skillsDescription: 'Your skills here',
   skills: [
     {
       skillname: 'HTML5'
@@ -97,16 +90,6 @@ const PORTFOLIO_DATA = {
       name: 'project4',
       description: 'mobileapp',
       imgurl: 'images/portfolio/phone.jpg'
-    }
-  ],
-  testimonials: [
-    {
-      description: 'This is a sample testimonial',
-      name: 'Some technical guy'
-    },
-    {
-      description: 'This is a sample testimonial',
-      name: 'Some technical guy'
     }
   ]
 };

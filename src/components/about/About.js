@@ -28,7 +28,7 @@ export default class About extends React.Component {
                 </div>
                 <div className="columns download">
                   <p>
-                    <a href="/files/DimitriosDouras.pdf" className="button" target="_blank">
+                    <a href="/files/DimitriosDouras.pdf" className="button" download>
                       <i className="fa fa-download" />
                       Download Resume
                     </a>

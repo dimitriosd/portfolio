@@ -31,12 +31,7 @@ export default class Header extends React.Component {
           </li>
           <li>
             <a className="smoothscroll" href="#portfolio">
-              Works
-            </a>
-          </li>
-          <li>
-            <a className="smoothscroll" href="#contact">
-              Contact
+              Projects
             </a>
           </li>
         </ul>{' '}
@@ -94,11 +89,18 @@ export default class Header extends React.Component {
         </li>
         <li>
           <a
-            href="https://join.skype.com/invite/dNVWc2s4OV5h"
+            href="skype:dimitriosd1983?chat"
             target="_blank"
             rel="noopener noreferrer"
           >
             <i className="fa fa-skype" />
+          </a>
+        </li>
+        <li>
+          <a
+            href="mailTo:dimitrios.n.douras@gmail.com"
+          >
+            <i className="fa fa-envelope" />
           </a>
         </li>
       </ul>
