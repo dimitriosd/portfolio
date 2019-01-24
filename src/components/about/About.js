@@ -1,5 +1,6 @@
 import React from 'react';
 import PortfolioData from '../../portfolioData';
+import pdfFile from '../../files/DimitriosDouras.pdf'
 
 export default class About extends React.Component {
   render() {
@@ -28,7 +29,7 @@ export default class About extends React.Component {
                 </div>
                 <div className="columns download">
                   <p>
-                    <a href="/files/DimitriosDouras.pdf" className="button" download>
+                    <a href={pdfFile} className="button" download>
                       <i className="fa fa-download" />
                       Download Resume
                     </a>
