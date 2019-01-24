@@ -1,8 +1,7 @@
 import React from 'react';
-import PortfolioData from '../../portfolioData'
+import PortfolioData from '../../portfolioData';
 
 export default class Header extends React.Component {
-
   renderNav() {
     return (
       <nav id="nav-wrap">
@@ -34,72 +33,27 @@ export default class Header extends React.Component {
               Projects
             </a>
           </li>
-        </ul>{' '}
+        </ul>
       </nav>
     );
   }
 
   renderSocial() {
+    const socialLinks = PortfolioData.socialLinks.map(social => {
+      return (
+        <li>
+          <a href={social.url} target="_blank" rel="noopener noreferrer">
+            <i className={social.className} />
+          </a>
+        </li>
+      );
+    });
+
     return (
       <ul className="social">
+        {socialLinks}
         <li>
-          <a
-            href="https://www.facebook.com/dimitris.douras"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fa fa-facebook" />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://twitter.com/DimitriosDrs"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fa fa-twitter" />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/dimitrios-douras-66b98530/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fa fa-linkedin" />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/dimitriosd"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fa fa-github" />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://stackoverflow.com/users/824002/dimitrios-douras"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fa fa-stack-overflow" />
-          </a>
-        </li>
-        <li>
-          <a
-            href="skype:dimitriosd1983?chat"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fa fa-skype" />
-          </a>
-        </li>
-        <li>
-          <a
-            href="mailTo:dimitrios.n.douras@gmail.com"
-          >
+          <a href={PortfolioData.email}>
             <i className="fa fa-envelope" />
           </a>
         </li>
