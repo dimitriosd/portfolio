@@ -53,7 +53,7 @@ export default class Header extends React.Component {
       <ul className="social">
         {socialLinks}
         <li>
-          <a href={PortfolioData.email}>
+          <a href={`mailTo:${PortfolioData.email}`}>
             <i className="fa fa-envelope" />
           </a>
         </li>
